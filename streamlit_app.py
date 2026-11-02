@@ -26,7 +26,6 @@ ingredients_list = st.multiselect('Choose up to 5 ingredients:', my_dataframe,ma
 if ingredients_list:
     
     ingredients_string = ''
-    st.write('The search value for ', fruit_chosen,' is ', search_on, '.')
 
     for fruit_chosen in ingredients_list:
         ingredients_string += fruit_chosen + ' '
