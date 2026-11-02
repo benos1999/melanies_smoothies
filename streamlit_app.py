@@ -4,7 +4,7 @@ import os
 from snowflake.snowpark.functions import col
 
 # Create a database connection to Snowflake
-conn = st.connection("snowflake", ttl=os.getenv("SNOWFLAKE_CONNECTION_TTL"))
+conn = st.connection("snowflake")
 session = conn.session()
 # Write directly to the app
 st.title(f":cup_with_straw: Customize Your Smoothie! :cup_with_straw:")
